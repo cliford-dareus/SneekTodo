@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo Sneek</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Left side -->
+        <div class="left_side">
+            <div class="app_action">
+                <span class="nav_addBtn">
+                    <i class="ri-add-line"></i>
+                </span>
+                <span class="dark_mode">
+                    <i class="ri-contrast-2-fill"></i>
+                </span>
+                <span class="clear_btn">
+                    <i class="ri-delete-bin-5-line"></i>
+                </span>
+            </div>
+
+            <ul class="todo_list">
+               <!-- List add with Javascript -->
+
+            </ul>
+        </div>
+
+        <!-- rigth_side -->
+        <div class="rigth_side">
+            <div class="top_rigth">
+                <h1 class="app_name">Sneekylist</h1>
+
+                <button class="mobile_btn">
+                    <i class="ri-arrow-right-circle-line"></i>
+                </button>  
+            </div>
+            
+            
+            <!-- content Body-->
+            <div class="app_body">
+                <div class="body_content">
+                    <!-- content added with Javascript -->
+                    <div class="note"></div>
+                    <div class="box">
+                    <div class="category_box">
+                        <div class="category_card">
+                            <img src="/images/business.jpg" alt="business">
+                            <h4>Business</h4>
+                        </div>
+                        <div class="category_card">
+                            <img src="/images/personal.jpg" alt="personal">
+                            <h4>Personal</h4>
+                        </div>
+                        <div class="category_card">
+                            <img src="/images/fun.jpg" alt="fun">
+                            <h4>Fun</h4>
+                        </div>
+                    </div>
+
+                    <p class="favorite_heading" style="color: var(--clr-txt2);">Favorite</p>
+
+                    <div class="favorite">
+                        <div class="favorite_card">
+                            <p>Title</p>
+
+                        </div>
+
+                        <div class="favorite_card">
+                            <p>Title</p>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- inputs Form -->
+                <div class="form_input">
+                    <form class="form">
+                        <h3>add New todo</h3>
+
+                        <input type="text" id="todo_input">
+                        <select class="category">
+                            <option value="fun">Fun</option>
+                            <option value="business">Business</option>
+                            <option value="personal">Personal</option>
+                        </select>
+                        <textarea id="text_input" cols="30" rows="10"></textarea>
+                        <input type="submit">
+                    </form>
+                </div>
+                <button class="add_btn">
+                    <i class="ri-add-fill"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
